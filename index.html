@@ -3,100 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Lezcano</title>
+    <title>Christian Lezcano | Geometric AI Researcher</title>
     <style>
-        /* Minimalist Academic Theme */
+        /* ELITE ACADEMIC THEME - Clean, Serious, Nature-inspired */
         body {
             font-family: Georgia, "Times New Roman", Times, serif;
             line-height: 1.6;
-            color: #222;
-            background-color: #fff;
+            color: #2c3e50;
+            background-color: #fdfdfd;
             margin: 0;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
         .container {
-            max-width: 750px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
-        /* Header */
+        /* HEADER */
         header {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-            margin-bottom: 35px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
         }
         h1 {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 2.2rem;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
             margin: 0 0 5px 0;
-            color: #111;
+            color: #000;
+            letter-spacing: -1px;
         }
-        .subtitle {
-            font-family: Helvetica, Arial, sans-serif;
+        .role {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 1.1rem;
             color: #555;
-            margin-bottom: 15px;
+            font-weight: 300;
+            margin-bottom: 20px;
         }
         .contact-links {
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 0.9rem;
+            margin-top: 15px;
         }
         .contact-links a {
-            color: #004488;
+            color: #2980b9;
             text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
+            margin-right: 20px;
+            font-weight: 600;
+            border-bottom: 1px dotted transparent;
         }
-        .contact-links a:hover { text-decoration: underline; }
-
-        /* Sections */
-        h2 {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 1.2rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        .contact-links a:hover {
+            border-bottom: 1px solid #2980b9;
         }
 
-        p { margin-bottom: 15px; }
-
-        /* Lists */
-        .entry { margin-bottom: 25px; }
-        .entry-title { font-weight: bold; font-size: 1.05rem; }
-        .entry-meta { font-style: italic; color: #666; }
+        /* SECTIONS */
+        section { margin-bottom: 50px; }
         
-        ul { margin-top: 5px; padding-left: 20px; }
-        li { margin-bottom: 5px; }
+        h2 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+            margin-bottom: 25px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
 
-        /* Publication Links */
-        .resources {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 0.8rem;
-            margin-top: 5px;
+        p { margin-bottom: 18px; text-align: justify; }
+
+        /* EMPHASIS HIGHLIGHTS */
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* PUBLICATIONS */
+        .pub-entry { margin-bottom: 30px; }
+        .pub-title {
+            font-weight: bold;
+            font-size: 1.05rem;
             display: block;
+            margin-bottom: 4px;
+            color: #000;
+        }
+        .pub-meta {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        .pub-context {
+            font-size: 0.9rem;
+            color: #444;
+            margin-bottom: 8px;
+            background: #f9f9f9;
+            padding: 5px 10px;
+            border-left: 3px solid #2980b9;
+            display: inline-block;
+        }
+        .resources {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 0.8rem;
         }
         .resources a {
-            color: #555;
+            color: #2980b9;
             text-decoration: none;
-            margin-right: 8px;
-            border: 1px solid #ddd;
-            padding: 2px 6px;
-            border-radius: 3px;
-        }
-        .resources a:hover {
-            background-color: #004488;
-            color: #fff;
-            border-color: #004488;
+            margin-right: 10px;
         }
 
+        /* MOBILE */
         @media (max-width: 600px) {
-            h1 { font-size: 1.8rem; }
-            .contact-links a { display: block; margin-bottom: 8px; }
+            h1 { font-size: 2rem; }
+            .contact-links a { display: block; margin-bottom: 10px; }
         }
     </style>
 </head>
@@ -106,12 +129,11 @@
 
     <header>
         <h1>Christian Lezcano</h1>
-        <div class="subtitle">Data Engineer & Researcher</div>
+        <div class="role">Independent Principal Investigator &bull; Geometric Deep Learning</div>
         
         <div class="contact-links">
-            <!-- Update this email if you are no longer at UPC, e.g., to a gmail -->
-            <a href="mailto:clezcano@cs.upc.edu">Email</a> 
-            <a href="ChristianLezcanoCV.pdf">CV (PDF)</a>
+            <a href="mailto:clezcano@cs.upc.edu">Email</a>
+            <a href="ChristianLezcanoCV.pdf">Curriculum Vitae</a>
             <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en">Google Scholar</a>
             <a href="https://github.com/clezcano">GitHub</a>
             <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
@@ -119,81 +141,79 @@
     </header>
 
     <section>
-        <h2>Research Focus</h2>
+        <h2>Current Research Agenda</h2>
         <p>
-            I am a researcher and engineer specializing in <strong>Data Mining, Synthetic Dataset Generation, and Optimization Algorithms</strong>. 
+            I am working at the intersection of <strong>Geometric Deep Learning</strong> and <strong>Material Science</strong>. My research targets the "Validity Crisis" in generative models: how to generate novel crystal structures that strictly obey physical symmetries (Space Groups) rather than just minimizing reconstruction loss.
         </p>
         <p>
-            My current work focuses on <strong>generative models</strong> for complex data structures. I am currently developing new approaches for high-fidelity synthetic data generation, targeting submission to top-tier conferences such as <strong>NeurIPS</strong>.
+            Currently, I am developing <strong>Differentiable Symmetry Projection (DSP)</strong>, a framework to enforce Wyckoff position constraints within continuous latent spaces. This work converges my background in <span class="highlight">Discrete Optimization</span> (Ant Colony/Hard Constraints) with <span class="highlight">Generative Modeling</span> (Synthetic Data/Probabilistic Models).
+        </p>
+        <p>
+            <strong>Target:</strong> High-fidelity generation of stable crystals. Preparing submission for <strong>NeurIPS 2026</strong>.
         </p>
     </section>
 
     <section>
-        <h2>Education</h2>
-        
-        <div class="entry">
-            <div class="entry-title">National University of Asuncion</div>
-            <div class="entry-meta">San Lorenzo, Paraguay</div>
-            <ul>
-                <li><strong>M.S., Computer Science</strong> (2012)</li>
-                <li><strong>B.S., Computer Science Engineering</strong> (2008)</li>
-            </ul>
-        </div>
+        <h2>Research Foundation (The "Zig-Zag" Convergence)</h2>
+        <p>
+            My path to Geometric AI is built on two foundational pillars:
+        </p>
+        <ul>
+            <li>
+                <strong>Pillar 1: Structure-Preserving Generative Models.</strong> 
+                Developed methods to generate synthetic transactional datasets that preserve statistical validity. This solved the "privacy vs. utility" trade-off in database mining.
+            </li>
+            <li>
+                <strong>Pillar 2: Optimization in Constrained Spaces.</strong> 
+                Mastered the application of meta-heuristics (Ant Colony Optimization) to 3D packing problems in Bioinformatics. This provided the mathematical intuition for handling 3D Euclidean constraints in my current work.
+            </li>
+        </ul>
     </section>
 
     <section>
         <h2>Selected Publications</h2>
-        
-        <div class="entry">
-            <div>
-                <strong>Synthetic dataset generation with itemset-based generative models</strong><br>
-                Lezcano, C. and Arias, M. (2019) <br>
-                <em>Proceedings of the 4th Workshop on Reliability and Security Data Analysis (ISSRE 2019)</em>, Berlin.
+
+        <!-- Re-Branded: Generative Modeling -->
+        <div class="pub-entry">
+            <span class="pub-title">Synthetic dataset generation with itemset-based generative models</span>
+            <div class="pub-meta">Lezcano, C. and Arias, M. (2019) &bull; IEEE ISSRE Workshop (RSDA)</div>
+            <div class="pub-context">
+                <strong>Relevance:</strong> Solved the "Validity Problem" in discrete data generation, a precursor to my current work on physical validity.
             </div>
-            <span class="resources">
-                <a href="https://ieeexplore.ieee.org/document/8990348">IEEE Xplore</a>
-                <a href="RSDA19slides.pdf">Slides</a>
-                <a href="LezcanoRSDA2019.bib">BibTex</a>
-            </span>
+            <div class="resources">
+                <br>
+                [<a href="https://ieeexplore.ieee.org/document/8990348">IEEE Xplore</a>]
+                [<a href="RSDA19slides.pdf">Slides</a>]
+                [<a href="LezcanoRSDA2019.bib">BibTex</a>]
+            </div>
         </div>
 
-        <div class="entry">
-            <div>
-                <strong>Characterizing transactional databases for frequent itemset mining</strong><br>
-                Lezcano, C. and Arias, M. (2019) <br>
-                <em>Proceedings of the 1st Workshop on Evaluation and Experimental Design in Data Mining (SDM 2019)</em>, Canada.
+        <!-- Re-Branded: Optimization -->
+        <div class="pub-entry">
+            <span class="pub-title">Protein side-chain packing problem: is there still room for improvement?</span>
+            <div class="pub-meta">Colbes, J., Lezcano, C., et al. (2017) &bull; Briefings in Bioinformatics (Impact Factor: 13.9)</div>
+            <div class="pub-context">
+                <strong>Relevance:</strong> Applied discrete optimization to 3D biological structures, establishing expertise in rotational/translational constraints.
             </div>
-            <span class="resources">
-                <a href="http://ceur-ws.org/Vol-2436/article_5.pdf">PDF</a>
-                <a href="https://vimeo.com/334123175">Video</a>
-                <a href="LezcanoA19.bib">BibTex</a>
-            </span>
+            <div class="resources">
+                <br>
+                [<a href="https://academic.oup.com/bib/article/18/6/1033/2562866">Journal</a>]
+                [<a href="ColbesCLRB17.bib">BibTex</a>]
+            </div>
         </div>
 
-        <div class="entry">
-            <div>
-                <strong>Protein side-chain packing problem: is there still room for improvement?</strong><br>
-                Colbes, J. D., Corona, R. I., Lezcano, C., Rodriguez, D. O. and Brizuela, C. A. (2017) <br>
-                <em>Briefings in Bioinformatics</em> 18(6), 1033-1043.
-            </div>
-            <span class="resources">
-                <a href="https://academic.oup.com/bib/article/18/6/1033/2562866">Journal</a>
-                <a href="ColbesCLRB17.bib">BibTex</a>
-            </span>
-        </div>
+    </section>
 
-        <div class="entry">
-            <div>
-                <strong>Team algorithms based on ant colony optimization</strong><br>
-                Lezcano, C., Pinto, D. and Baran, B. (2008) <br>
-                <em>Parallel Problem Solving from Nature - PPSN X</em>.
-            </div>
-            <span class="resources">
-                <a href="https://link.springer.com/chapter/10.1007%2F978-3-540-87700-4_77">Springer Link</a>
-                <a href="LezcanoPB08.bib">BibTex</a>
-            </span>
+    <section>
+        <h2>Education</h2>
+        <div class="pub-entry">
+            <span class="pub-title">M.S., Computer Science</span>
+            <div class="pub-meta">National University of Asuncion (2012)</div>
         </div>
-
+        <div class="pub-entry">
+            <span class="pub-title">B.S., Computer Science Engineering</span>
+            <div class="pub-meta">National University of Asuncion (2008)</div>
+        </div>
     </section>
 
 </div>
