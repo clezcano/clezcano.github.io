@@ -3,110 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Lezcano | ML Engineer & Researcher</title>
+    <title>Christian Lezcano | Research Profile</title>
     <style>
-        /* Professional, Clean, Honest */
+        /* ACADEMIC STANDARD THEME (Google Scholar Style) */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: Georgia, "Times New Roman", Times, serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
+            color: #222;
+            background-color: #fff;
             margin: 0;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
         .container {
-            max-width: 850px;
+            max-width: 800px;
             margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-radius: 8px;
         }
 
         /* HEADER */
         header {
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
         }
         h1 {
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 2.2rem;
             margin: 0 0 5px 0;
-            color: #2c3e50;
         }
-        .subtitle {
+        .role {
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.1rem;
-            color: #666;
-            font-weight: 400;
-            margin-bottom: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .links {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.95rem;
         }
         .links a {
-            color: #0366d6;
+            color: #1a0dab; /* Google Scholar Blue */
             text-decoration: none;
             margin-right: 15px;
-            font-weight: 600;
-            font-size: 0.95rem;
         }
         .links a:hover { text-decoration: underline; }
 
         /* SECTIONS */
         h2 {
-            font-size: 1.4rem;
-            border-left: 4px solid #0366d6;
-            padding-left: 12px;
-            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin-top: 45px;
             margin-bottom: 20px;
-            color: #2c3e50;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
         }
+        
+        p { margin-bottom: 15px; text-align: justify; }
 
-        /* JOBS & EDUCATION */
-        .job-entry, .edu-entry {
+        /* PUBLICATIONS LIST */
+        .pub-entry {
             margin-bottom: 25px;
         }
-        .job-title {
+        .pub-title {
             font-weight: bold;
-            font-size: 1.1rem;
-            color: #222;
+            font-size: 1.05rem;
+            color: #1a0dab;
         }
-        .job-company {
-            font-weight: 600;
-            color: #555;
-        }
-        .job-date {
-            float: right;
-            color: #888;
-            font-size: 0.9rem;
-        }
-        .job-desc {
-            margin-top: 8px;
-            font-size: 0.95rem;
+        .pub-meta {
             color: #444;
-        }
-        .tech-stack {
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 5px;
             font-style: italic;
+            margin: 4px 0;
         }
-
-        /* PUBLICATIONS */
-        .pub-entry { margin-bottom: 20px; }
+        .pub-links {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+        }
         .pub-links a {
-            font-size: 0.8rem;
-            color: #0366d6;
-            margin-right: 10px;
-            border: 1px solid #e1e4e8;
-            padding: 2px 8px;
-            border-radius: 4px;
+            color: #1a0dab;
             text-decoration: none;
+            margin-right: 8px;
         }
-        .pub-links a:hover { background: #f6f8fa; }
+        .pub-links a:hover { text-decoration: underline; }
 
-        /* MOBILE */
+        /* MOBILE ADJUSTMENTS */
         @media (max-width: 600px) {
-            .container { padding: 20px; }
-            .job-date { float: none; display: block; margin-bottom: 5px; }
+            h1 { font-size: 1.8rem; }
+            .links a { display: block; margin-bottom: 5px; }
         }
     </style>
 </head>
@@ -116,11 +99,13 @@
 
     <header>
         <h1>Christian Lezcano</h1>
-        <div class="subtitle">Data Engineer &bull; Academic Instructor &bull; ML Researcher</div>
+        <div class="role">
+            Independent Principal Investigator &bull; AI Instructor (Columbia University of Paraguay)
+        </div>
         
         <div class="links">
             <a href="mailto:clezcanopy@gmail.com">Email</a>
-            <a href="ChristianLezcanoCV.pdf">Download CV (PDF)</a>
+            <a href="resume_Christian_Lezcano.pdf" target="_blank"><strong>Curriculum Vitae (PDF)</strong></a>
             <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en">Google Scholar</a>
             <a href="https://github.com/clezcano">GitHub</a>
             <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
@@ -128,99 +113,95 @@
     </header>
 
     <section>
-        <h2>Current Focus</h2>
+        <h2>Research Statement</h2>
         <p>
-            I am a <strong>Machine Learning Engineer</strong> and <strong>Educator</strong> based in Paraguay, with a specialized focus on Scalable Data Infrastructure and Generative AI. 
+            I am a researcher and engineer situated at the intersection of <strong>Discrete Optimization</strong> and <strong>Generative AI</strong>. My research agenda focuses on the "Validity Crisis" in generative models for scientific discovery: developing methods that enforce hard physical constraints (Symmetries/Wyckoff Positions) within probabilistic latent spaces.
         </p>
         <p>
-            Currently, I am bridging the gap between industry and research. While teaching AI at <strong>Columbia University of Paraguay</strong> and building RAG systems at <strong>Vitaly</strong>, I am independently conducting research in <strong>Geometric Deep Learning</strong> targeting a NeurIPS 2026 submission.
+            My background converges two distinct fields: <strong>Optimization in Constrained Spaces</strong> (Bioinformatics/Ant Colony, 2008–2017) and <strong>Statistical Generative Modeling</strong> (Itemset Mining/Synthetic Data, 2019). I am currently leveraging this dual expertise to build Physics-Aware Generative Models for Crystallography, targeting top-tier venues (NeurIPS).
         </p>
     </section>
 
     <section>
-        <h2>Experience</h2>
+        <h2>Publications</h2>
 
-        <div class="job-entry">
-            <span class="job-date">July 2023 - Present</span>
-            <div class="job-title">AI & Data Science Instructor</div>
-            <div class="job-company">Columbia University of Paraguay</div>
-            <div class="job-desc">
-                <ul>
-                    <li>Supervising undergraduate students on applied AI and data science research projects.</li>
-                    <li>Designed analytical frameworks and KPIs to improve student retention and academic performance.</li>
-                </ul>
+        <!-- 2019b -->
+        <div class="pub-entry">
+            <div class="pub-title">Synthetic dataset generation with itemset-based generative models</div>
+            <div class="pub-meta">
+                Lezcano, C. and Arias, M. (2019) <br>
+                <em>Proceedings of the 4th Workshop on Reliability and Security Data Analysis (ISSRE 2019)</em>, Berlin.
+            </div>
+            <div class="pub-links">
+                [<a href="https://ieeexplore.ieee.org/document/8990348">IEEE Xplore</a>]
+                [<a href="RSDA19slides.pdf">Slides</a>]
+                [<a href="LezcanoRSDA2019.bib">BibTex</a>]
             </div>
         </div>
 
-        <div class="job-entry">
-            <span class="job-date">Sep 2016 - Present</span>
-            <div class="job-title">Data Engineer</div>
-            <div class="job-company">Vitaly Mineral Water</div>
-            <div class="job-desc">
-                <ul>
-                    <li>Built a <strong>RAG system</strong> for supply chain optimization using LangChain, GPT-4, and FAISS.</li>
-                    <li>Developed scalable microservices on AWS (EC2, S3, RDS) reducing data latency by 30%.</li>
-                    <li>Implemented CI/CD pipelines with GitHub Actions, reducing deployment time by 50%.</li>
-                </ul>
+        <!-- 2019a -->
+        <div class="pub-entry">
+            <div class="pub-title">Characterizing transactional databases for frequent itemset mining</div>
+            <div class="pub-meta">
+                Lezcano, C. and Arias, M. (2019) <br>
+                <em>Proceedings of the 1st Workshop on Evaluation and Experimental Design in Data Mining (SDM 2019)</em>, Canada.
             </div>
-            <div class="tech-stack">Stack: Python, AWS, Docker, LangChain, PostgreSQL, Airflow</div>
+            <div class="pub-links">
+                [<a href="http://ceur-ws.org/Vol-2436/article_5.pdf">PDF</a>]
+                [<a href="https://vimeo.com/334123175">Video</a>]
+                [<a href="LezcanoA19.bib">BibTex</a>]
+            </div>
         </div>
+
+        <!-- 2017 -->
+        <div class="pub-entry">
+            <div class="pub-title">Protein side-chain packing problem: is there still room for improvement?</div>
+            <div class="pub-meta">
+                Colbes, J., Corona, R., Lezcano, C., et al. (2017) <br>
+                <em>Briefings in Bioinformatics</em> 18(6), 1033-1043.
+            </div>
+            <div class="pub-links">
+                [<a href="https://academic.oup.com/bib/article/18/6/1033/2562866">Journal Link</a>]
+                [<a href="ColbesCLRB17.bib">BibTex</a>]
+            </div>
+        </div>
+
+        <!-- 2015 (ADDED) -->
+        <div class="pub-entry">
+            <div class="pub-title">An experimental analysis of the performance of sidechain packing algorithms</div>
+            <div class="pub-meta">
+                Brizuela, C., Corona, R., Lezcano, C., et al. (2015) <br>
+                <em>Genetic and Evolutionary Computation Conference (GECCO 2015) Companion</em>, Madrid.
+            </div>
+            <div class="pub-links">
+                [<a href="https://dl.acm.org/citation.cfm?doid=2739482.2768440">ACM DL</a>]
+                [<a href="BrizuelaCLRC15.bib">BibTex</a>]
+            </div>
+        </div>
+
+        <!-- 2008 (ADDED) -->
+        <div class="pub-entry">
+            <div class="pub-title">Team algorithms based on ant colony optimization - A new multi-objective optimization approach</div>
+            <div class="pub-meta">
+                Lezcano, C., Pinto, D. and Baran, B. (2008) <br>
+                <em>Parallel Problem Solving from Nature - PPSN X</em>, Dortmund.
+            </div>
+            <div class="pub-links">
+                [<a href="https://link.springer.com/chapter/10.1007%2F978-3-540-87700-4_77">Springer Link</a>]
+                [<a href="LezcanoPB08.bib">BibTex</a>]
+            </div>
+        </div>
+
     </section>
 
     <section>
         <h2>Education</h2>
-        
-        <div class="edu-entry">
-            <span class="job-date">2025</span>
-            <div class="job-title">Machine Learning Engineering Specialization</div>
-            <div class="job-company">Anyone AI</div>
-        </div>
-
-        <div class="edu-entry">
-            <span class="job-date">2012</span>
-            <div class="job-title">M.S., Computer Science</div>
-            <div class="job-company">National University of Asuncion</div>
-        </div>
-
-        <div class="edu-entry">
-            <span class="job-date">2008</span>
-            <div class="job-title">B.S., Computer Science Engineering</div>
-            <div class="job-company">National University of Asuncion</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Selected Publications</h2>
-        
         <div class="pub-entry">
-            <strong>Synthetic dataset generation with itemset-based generative models</strong><br>
-            Lezcano, C. and Arias, M. (2019) &bull; <em>IEEE ISSRE Workshop (RSDA)</em>
-            <div class="pub-links">
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/8990348">IEEE Xplore</a>
-                <a href="LezcanoRSDA2019.bib">BibTex</a>
-            </div>
+            <strong>M.S., Computer Science</strong> (2012) &bull; National University of Asuncion
         </div>
-
         <div class="pub-entry">
-            <strong>Characterizing transactional databases for frequent itemset mining</strong><br>
-            Lezcano, C. and Arias, M. (2019) &bull; <em>SIAM SDM Workshop</em>
-            <div class="pub-links">
-                <br>
-                <a href="http://ceur-ws.org/Vol-2436/article_5.pdf">PDF</a>
-                <a href="https://vimeo.com/334123175">Video Presentation</a>
-            </div>
+            <strong>B.S., Computer Science Engineering</strong> (2008) &bull; National University of Asuncion
         </div>
-
-        <div class="pub-entry">
-            <strong>Protein side-chain packing problem: is there still room for improvement?</strong><br>
-            Colbes, J., Lezcano, C., et al. (2017) &bull; <em>Briefings in Bioinformatics</em>
-            <div class="pub-links">
-                <br>
-                <a href="https://academic.oup.com/bib/article/18/6/1033/2562866">Journal Link</a>
-            </div>
-        </div>
-
     </section>
 
 </div>
