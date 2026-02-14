@@ -5,85 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lezcano</title>
     <style>
-        /* THE "BARE METAL" ACADEMIC THEME */
+        /* MINIMALIST ARCHIVE THEME */
         body {
-            font-family: "Times New Roman", Times, serif; /* The universal font of science */
-            line-height: 1.5;
-            color: #000;
-            max-width: 750px;
-            margin: 40px auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 720px;
+            margin: 50px auto;
             padding: 0 20px;
             background-color: #fff;
         }
 
         /* HEADER */
         header {
-            border-bottom: 1px solid #000;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eaeaea;
             padding-bottom: 20px;
-            margin-bottom: 30px;
         }
         h1 {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 2.2rem;
             margin: 0 0 5px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #111;
+            letter-spacing: -0.5px;
         }
         .location {
-            font-size: 16px;
-            font-style: italic;
+            font-size: 1rem;
+            color: #666;
             margin-bottom: 15px;
         }
 
-        /* LINKS ROW */
+        /* LINKS */
         .links {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
+            font-size: 0.9rem;
         }
         .links a {
-            color: #0000AA; /* Classic Link Blue */
+            color: #0066cc;
             text-decoration: none;
             margin-right: 15px;
+            font-weight: 500;
         }
         .links a:hover { text-decoration: underline; }
 
-        /* KEYWORDS (Safe, no sentences) */
-        .keywords {
-            margin-top: 15px;
-            font-size: 15px;
-        }
-        .label { font-weight: bold; }
-
-        /* HEADINGS */
+        /* SECTIONS */
         h2 {
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 1.1rem;
             text-transform: uppercase;
-            border-bottom: 1px solid #ccc;
+            letter-spacing: 1px;
+            color: #555;
+            border-bottom: 1px solid #eee;
             padding-bottom: 5px;
             margin-top: 40px;
             margin-bottom: 20px;
         }
 
-        /* LISTS */
+        /* ROLES LIST */
+        .role-entry {
+            margin-bottom: 20px;
+        }
+        .role-title {
+            font-weight: bold;
+            color: #111;
+            font-size: 1.05rem;
+        }
+        .role-detail {
+            color: #444;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .role-sub {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* PUBLICATIONS LIST */
         ul {
-            list-style-type: none; /* No bullets, cleaner look */
-            padding-left: 0;
+            list-style: none;
+            padding: 0;
         }
         li {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
-        
-        /* CITATION STYLE */
-        .paper-title { font-weight: bold; }
-        .paper-meta { font-style: italic; color: #444; }
-        .paper-links { font-family: Arial, sans-serif; font-size: 13px; margin-top: 3px; }
-        .paper-links a { color: #0000AA; text-decoration: none; margin-right: 10px; }
+        .paper-title {
+            font-weight: 600;
+            color: #000;
+        }
+        .paper-meta {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+        }
+        .paper-links a {
+            font-size: 0.85rem;
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 10px;
+        }
         .paper-links a:hover { text-decoration: underline; }
 
         /* MOBILE */
         @media (max-width: 600px) {
-            body { padding: 15px; }
+            h1 { font-size: 1.8rem; }
+            .links a { display: block; margin-bottom: 5px; }
         }
     </style>
 </head>
@@ -100,15 +123,25 @@
             <a href="https://github.com/clezcano">GitHub</a>
             <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
         </div>
-
-        <!-- FACTUAL KEYWORDS: No claims, just topics. -->
-        <div class="keywords">
-            <span class="label">Focus:</span> 
-            Agentic AI, RAG Systems, Geometric Deep Learning, Discrete Optimization.
-        </div>
     </header>
 
-    <!-- SECTION 1: PUBLICATIONS (The Evidence) -->
+    <!-- CURRENT ACTIVITIES -->
+    <h2>Current Affiliations</h2>
+    
+    <div class="role-entry">
+        <span class="role-title">Senior Data Engineer</span>
+        <span class="role-detail">Specialization: Agentic AI & RAG Systems (Industry)</span>
+    </div>
+
+    <div class="role-entry">
+        <span class="role-title">Adjunct Lecturer</span>
+        <span class="role-detail">Columbia University of Paraguay</span>
+        <div class="role-sub">
+            Courses: Principles of Information Systems • Undergraduate Thesis Supervision
+        </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
     <h2>Publications</h2>
     <ul>
         <li>
@@ -156,32 +189,6 @@
                 [<a href="https://link.springer.com/chapter/10.1007%2F978-3-540-87700-4_77">Springer</a>]
                 [<a href="LezcanoPB08.bib">BibTex</a>]
             </div>
-        </li>
-    </ul>
-
-    <!-- SECTION 2: EDUCATION (The Foundation) -->
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>M.S., Computer Science</strong> (2012)<br>
-            National University of Asuncion
-        </li>
-        <li>
-            <strong>B.S., Computer Science Engineering</strong> (2008)<br>
-            National University of Asuncion
-        </li>
-    </ul>
-    
-    <!-- SECTION 3: CURRENT ROLES (The Reality) -->
-    <h2>Current Affiliations</h2>
-    <ul>
-        <li>
-            <strong>Senior Data Engineer</strong> (Industry)<br>
-            <span style="font-size: 14px; color: #555;">Focus: RAG Systems & Agentic Workflows</span>
-        </li>
-        <li>
-            <strong>Thesis Advisor</strong> (Academic)<br>
-            Columbia University of Paraguay
         </li>
     </ul>
 
