@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lezcano</title>
     <style>
-        /* MINIMALIST ARCHIVE THEME */
+        /* MINIMALIST ARCHIVE THEME - NO BOXES */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -19,8 +19,7 @@
         /* HEADER */
         header {
             margin-bottom: 40px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 30px;
+            /* No border here anymore, we move it to below the roles */
         }
         h1 {
             font-size: 2.2rem;
@@ -36,8 +35,8 @@
 
         /* LINKS */
         .links {
-            font-size: 0.9rem;
-            margin-bottom: 25px;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
         }
         .links a {
             color: #0066cc;
@@ -47,19 +46,25 @@
         }
         .links a:hover { text-decoration: underline; }
 
-        /* CURRENT ROLES (The "Active" Signal) */
-        .current-roles {
-            background-color: #f9f9f9; /* Subtle grey box to separate it */
-            padding: 15px;
-            border-radius: 6px;
-            font-size: 0.95rem;
+        /* CURRENT ROLES (Plain Text Layout) */
+        .affiliations {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee; /* Subtle separator line */
         }
         .role-row {
             margin-bottom: 8px;
+            font-size: 1rem;
         }
-        .role-row:last-child { margin-bottom: 0; }
-        .role-title { font-weight: 600; color: #000; }
-        .role-detail { color: #555; }
+        .role-title {
+            font-weight: 600;
+            color: #111;
+            margin-right: 6px;
+        }
+        .role-detail {
+            color: #444;
+        }
 
         /* SECTIONS */
         h2 {
@@ -107,6 +112,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; }
             .links a { display: block; margin-bottom: 8px; }
+            .role-title { display: block; margin-bottom: 2px; }
         }
     </style>
 </head>
@@ -116,7 +122,6 @@
         <h1>Christian Lezcano</h1>
         <div class="location">San Lorenzo, Paraguay</div>
         
-        <!-- LINKS -->
         <div class="links">
             <a href="mailto:clezcanopy@gmail.com">Email</a>
             <a href="resume_Christian_Lezcano.pdf" target="_blank">Curriculum Vitae (PDF)</a>
@@ -125,8 +130,8 @@
             <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
         </div>
 
-        <!-- AFFILIATIONS: Clean, Factual, Safe -->
-        <div class="current-roles">
+        <!-- AFFILIATIONS: Plain text, clean, no boxes -->
+        <div class="affiliations">
             <div class="role-row">
                 <span class="role-title">Senior Data Engineer:</span>
                 <span class="role-detail">Specializing in Agentic AI & RAG Systems</span>
