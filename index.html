@@ -4,27 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lezcano</title>
-    <meta name="description" content="Christian Lezcano: Machine Learning Engineer specializing in RAG Systems, Agentic AI, and Geometric Deep Learning.">
+    
+    <!-- SEO METADATA -->
+    <meta name="description" content="Christian Lezcano: Machine Learning Engineer specializing in RAG Systems and Agentic AI. Adjunct Lecturer at Columbia University of Paraguay.">
+    
+    <!-- PASTE YOUR GOOGLE VERIFICATION CODE HERE (Step 6) -->
+    <!-- <meta name="google-site-verification" content="XYZ..." /> -->
+
     <style>
         /* MINIMALIST ARCHIVE THEME - FINAL */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #222;
-            max-width: 720px;
+            max-width: 750px;
             margin: 60px auto;
             padding: 0 20px;
             background-color: #fff;
         }
 
-        /* HEADER */
-        header { margin-bottom: 40px; }
+        /* HEADER LAYOUT (Flexbox for Photo + Text) */
+        header {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        /* PHOTO STYLES */
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%; /* Circle Crop */
+            object-fit: cover; /* Ensures face isn't stretched */
+            border: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        /* TEXT SIDE OF HEADER */
+        .header-content {
+            flex-grow: 1;
+        }
+
         h1 {
             font-size: 2.2rem;
             margin: 0 0 5px 0;
             color: #111;
             letter-spacing: -0.5px;
         }
+        
         .location {
             font-size: 1rem;
             color: #666;
@@ -35,11 +65,13 @@
         .links {
             font-size: 0.95rem;
             margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         .links a {
             color: #0066cc;
             text-decoration: none;
-            margin-right: 15px;
             font-weight: 500;
         }
         .links a:hover { text-decoration: underline; }
@@ -47,7 +79,6 @@
         /* CURRENT ROLES */
         .affiliations {
             margin-top: 10px;
-            margin-bottom: 40px;
             padding-top: 20px;
             border-top: 1px solid #eee;
         }
@@ -100,9 +131,16 @@
         }
         .paper-links a:hover { text-decoration: underline; }
 
-        @media (max-width: 600px) {
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column-reverse; /* Photo moves to top on mobile */
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+            .links { justify-content: center; }
             h1 { font-size: 1.8rem; }
-            .links a { display: block; margin-bottom: 8px; }
             .role-title { display: block; margin-bottom: 2px; }
         }
     </style>
@@ -110,31 +148,34 @@
 <body>
 
     <header>
-        <h1>Christian Lezcano</h1>
-        <div class="location">San Lorenzo, Paraguay</div>
-        
-        <div class="links">
-            <a href="mailto:clezcanopy@gmail.com">Email</a>
-            <a href="resume_Christian_Lezcano.pdf" target="_blank">Curriculum Vitae (PDF)</a>
-            <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en">Google Scholar</a>
-            <a href="https://github.com/clezcano">GitHub</a>
-            <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
+        <div class="header-content">
+            <h1>Christian Lezcano</h1>
+            <div class="location">San Lorenzo, Paraguay</div>
+            
+            <div class="links">
+                <a href="mailto:clezcanopy@gmail.com">Email</a>
+                <a href="resume_Christian_Lezcano.pdf" target="_blank">Curriculum Vitae (PDF)</a>
+                <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en">Google Scholar</a>
+                <a href="https://github.com/clezcano">GitHub</a>
+                <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
+            </div>
+
+            <div class="affiliations">
+                <div class="role-row">
+                    <span class="role-title">Machine Learning Engineer:</span>
+                    <span class="role-detail">Specializing in Agentic AI & RAG Systems</span>
+                </div>
+                <div class="role-row">
+                    <span class="role-title">Adjunct Lecturer:</span>
+                    <span class="role-detail">Columbia University of Paraguay (Principles of Information Systems & Thesis Supervision)</span>
+                </div>
+            </div>
         </div>
 
-        <!-- AFFILIATIONS: The Pivot is complete. No more "Data Engineer". -->
-        <div class="affiliations">
-            <div class="role-row">
-                <span class="role-title">Machine Learning Engineer:</span>
-                <span class="role-detail">Specializing in Agentic AI & RAG Systems</span>
-            </div>
-            <div class="role-row">
-                <span class="role-title">Adjunct Lecturer:</span>
-                <span class="role-detail">Columbia University of Paraguay (Principles of Information Systems & Thesis Supervision)</span>
-            </div>
-        </div>
+        <!-- PHOTO: Make sure profile.jpg is in your repo! -->
+        <img src="profile.jpg" alt="Christian Lezcano" class="profile-photo">
     </header>
 
-    <!-- PUBLICATIONS -->
     <h2>Publications</h2>
     <ul>
         <li>
