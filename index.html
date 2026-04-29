@@ -4,229 +4,326 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lezcano</title>
-    
-    <!-- SEO METADATA -->
-    <meta name="description" content="Christian Lezcano: Machine Learning Engineer specializing in RAG Systems and Agentic AI. CS Instructor at Columbia University of Paraguay.">
-    <meta name="keywords" content="Christian Lezcano, Machine Learning Engineer, Paraguay, Agentic AI, RAG, Geometric Deep Learning, Optimization">
+
+    <meta name="description" content="Christian Lezcano — Machine Learning Engineer and CS Instructor at Columbia University of Paraguay. Research interests in Agentic AI, RAG Systems, and Discrete Optimization.">
+    <meta name="keywords" content="Christian Lezcano, Machine Learning Engineer, Paraguay, Agentic AI, RAG, Geometric Deep Learning, Discrete Optimization, Generative AI">
     <meta name="author" content="Christian Lezcano">
-    
-    <!-- GOOGLE VERIFICATION CODE -->
-    <meta name="google-site-verification" content="DWkNDgFaDeQyKWz5ZIK5P7zX4q8DPh_jnUuoukJB02I" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        /* MINIMALIST ARCHIVE THEME - FINAL */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            max-width: 750px;
-            margin: 60px auto;
-            padding: 0 20px;
-            background-color: #fff;
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-tertiary: #757575;
+            --border: #e4e4e4;
+            --border-light: #f0f0f0;
+            --bg: #ffffff;
+            --bg-surface: #f9f9f8;
+            --accent: #2a52a0;
+            --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        /* HEADER LAYOUT */
+        body {
+            font-family: var(--font-serif);
+            font-size: 16px;
+            line-height: 1.75;
+            color: var(--text-primary);
+            background: var(--bg);
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 60px 24px 90px;
+        }
+
+        /* ── HEADER ── */
         header {
             display: flex;
             align-items: flex-start;
             gap: 40px;
-            margin-bottom: 50px;
-            border-bottom: 1px solid #eee;
             padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 48px;
         }
 
-        /* PHOTO STYLES */
-        .profile-photo {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 1px solid #ddd;
-            flex-shrink: 0;
-        }
-
-        /* TEXT SIDE OF HEADER */
-        .header-content {
-            flex-grow: 1;
-        }
+        .header-text { flex: 1; min-width: 0; }
 
         h1 {
-            font-size: 2.2rem;
-            margin: 0 0 5px 0;
-            color: #111;
-            letter-spacing: -0.5px;
-        }
-        
-        .location {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 20px;
+            font-family: var(--font-sans);
+            font-size: 32px;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
         }
 
-        /* LINKS */
-        .links {
-            font-size: 0.95rem;
-            margin-bottom: 30px;
+        .subtitle {
+            font-family: var(--font-sans);
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+        }
+
+        .location {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 24px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            object-fit: cover;
+            flex-shrink: 0;
+            background: var(--bg-surface);
+        }
+
+        /* ── NAVIGATION ── */
+        .nav-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 8px;
         }
-        .links a {
-            color: #0066cc;
-            text-decoration: none;
+
+        .nav-links a {
+            font-family: var(--font-sans);
+            font-size: 13px;
             font-weight: 500;
-        }
-        .links a:hover { text-decoration: underline; }
-
-        /* CURRENT ROLES */
-        .affiliations {
-            margin-top: 10px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .role-row {
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-        .role-title {
-            font-weight: 600;
-            color: #111;
-            margin-right: 6px;
-        }
-        .role-detail {
-            color: #555;
-        }
-
-        /* SECTIONS */
-        h2 {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #555;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 50px;
-            margin-bottom: 25px;
-        }
-
-        /* PUBLICATIONS LIST */
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 25px; }
-        
-        .paper-title {
-            font-weight: 600;
-            color: #000;
-            display: block;
-            margin-bottom: 3px;
-        }
-        .paper-meta {
-            font-size: 0.95rem;
-            color: #666;
-            font-style: italic;
-        }
-        .paper-links { margin-top: 5px; }
-        .paper-links a {
-            font-size: 0.85rem;
-            color: #0066cc;
+            color: var(--text-secondary);
             text-decoration: none;
-            margin-right: 12px;
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.2s ease;
         }
-        .paper-links a:hover { text-decoration: underline; }
 
-        /* MOBILE RESPONSIVE */
-        @media (max-width: 650px) {
+        .nav-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: #f4f7ff;
+        }
+
+        /* ── SECTIONS ── */
+        section { margin-bottom: 56px; }
+
+        .section-label {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        /* ── RESEARCH INTERESTS GRID ── */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .interest-card {
+            padding: 16px;
+            background: var(--bg-surface);
+            border-radius: 6px;
+            border: 1px solid transparent;
+            transition: border 0.2s ease;
+        }
+
+        .interest-card:hover { border-color: var(--border); }
+
+        .interest-card h3 {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .interest-card p {
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--text-secondary);
+        }
+
+        /* ── PUBLICATIONS ── */
+        .pub-list { list-style: none; }
+        .pub-item { padding: 22px 0; border-bottom: 1px solid var(--border-light); }
+        .pub-item:first-child { padding-top: 0; }
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-title {
+            font-size: 16px;
+            font-weight: 500;
+            font-style: italic;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .pub-meta {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-bottom: 10px;
+        }
+
+        .pub-links { display: flex; gap: 8px; }
+        .pub-links a {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .pub-links a:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* ── TEACHING ── */
+        .teaching-item {
+            padding: 14px 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        .teaching-year {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            color: var(--text-tertiary);
+            min-width: 80px;
+        }
+
+        .teaching-content strong {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .teaching-content p { font-size: 14px; color: var(--text-secondary); font-style: italic; }
+
+        /* ── FOOTER ── */
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-light);
+            font-family: var(--font-sans);
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+        }
+
+        /* ── MOBILE RESPONSIVENESS ── */
+        @media (max-width: 600px) {
             header {
                 flex-direction: column-reverse;
                 align-items: center;
                 text-align: center;
-                gap: 20px;
             }
-            .links { justify-content: center; }
-            h1 { font-size: 1.8rem; }
-            .role-title { display: block; margin-bottom: 2px; }
+            .avatar { margin-bottom: 16px; }
+            .nav-links { justify-content: center; }
+            .teaching-item { flex-direction: column; gap: 4px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="header-content">
+        <div class="header-text">
             <h1>Christian Lezcano</h1>
+            <div class="subtitle">Researcher & Instructor | Machine Learning Engineer</div>
             <div class="location">San Lorenzo, Paraguay</div>
-            
-            <div class="links">
+
+            <nav class="nav-links">
                 <a href="mailto:clezcanopy@gmail.com">Email</a>
-                <a href="resume_Christian_Lezcano.pdf" target="_blank">Curriculum Vitae (PDF)</a>
-                <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en">Google Scholar</a>
-                <a href="https://github.com/clezcano">GitHub</a>
-                <a href="https://www.linkedin.com/in/clezcano/">LinkedIn</a>
-            </div>
-
-            <div class="affiliations">
-                <div class="role-row">
-                    <span class="role-title">Machine Learning Engineer:</span>
-                    <span class="role-detail">Specializing in Agentic AI & RAG Systems</span>
-                </div>
-                <div class="role-row">
-                    <span class="role-title">CS Instructor:</span>
-                    <span class="role-detail">Columbia University of Paraguay (Principles of Information Systems & Thesis Supervision)</span>
-                </div>
-            </div>
+                <a href="Resume_Christian_Lezcano.pdf" target="_blank">CV (PDF)</a>
+                <a href="https://scholar.google.com/citations?user=QmAXam4AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <a href="https://github.com/clezcano" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/clezcano/" target="_blank">LinkedIn</a>
+            </nav>
         </div>
-
-        <!-- PHOTO: Ensure 'profile.jpg' is uploaded to your GitHub repo -->
-        <img src="profile.jpg" alt="Christian Lezcano" class="profile-photo">
+        <img src="profile.jpg" alt="Christian Lezcano" class="avatar">
     </header>
 
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <span class="paper-title">Synthetic dataset generation with itemset-based generative models</span>
-            <div class="paper-meta">Lezcano, C. and Arias, M. (2019) • IEEE ISSRE Workshop (RSDA)</div>
-            <div class="paper-links">
-                [<a href="https://ieeexplore.ieee.org/document/8990348">IEEE Xplore</a>]
-                [<a href="RSDA19slides.pdf">Slides</a>]
-                [<a href="LezcanoRSDA2019.bib">BibTex</a>]
+    <section>
+        <p class="section-label">Research Interests</p>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <h3>Agentic AI & RAG</h3>
+                <p>Focusing on autonomous agents and retrieval architectures for advanced reasoning and thesis supervision.</p>
             </div>
-        </li>
+            <div class="interest-card">
+                <h3>Discrete Optimization</h3>
+                <p>Applying optimization techniques to bioinformatics and machine learning challenges.</p>
+            </div>
+            <div class="interest-card">
+                <h3>Geometric Deep Learning</h3>
+                <p>Exploring neural networks designed for non-Euclidean data structures and complex graph representations.</p>
+            </div>
+        </div>
+    </section>
 
-        <li>
-            <span class="paper-title">Characterizing transactional databases for frequent itemset mining</span>
-            <div class="paper-meta">Lezcano, C. and Arias, M. (2019) • SIAM SDM Workshop</div>
-            <div class="paper-links">
-                [<a href="http://ceur-ws.org/Vol-2436/article_5.pdf">PDF</a>]
-                [<a href="https://vimeo.com/334123175">Video</a>]
-                [<a href="LezcanoA19.bib">BibTex</a>]
+    <section>
+        <p class="section-label">Academic Experience</p>
+        <div class="teaching-item">
+            <div class="teaching-year">Current</div>
+            <div class="teaching-content">
+                <strong>Instructor, Columbia University of Paraguay</strong>
+                <p>Algorithms II: Advanced data structures and complexity analysis.</p>
             </div>
-        </li>
+        </div>
+        <div class="teaching-item">
+            <div class="teaching-year">Current</div>
+            <div class="teaching-content">
+                <strong>Thesis Supervision</strong>
+                <p>Guiding undergraduate research in information systems and optimization.</p>
+            </div>
+        </div>
+    </section>
 
-        <li>
-            <span class="paper-title">Protein side-chain packing problem: is there still room for improvement?</span>
-            <div class="paper-meta">Colbes, J., Corona, R., Lezcano, C., et al. (2017) • Briefings in Bioinformatics</div>
-            <div class="paper-links">
-                [<a href="https://academic.oup.com/bib/article/18/6/1033/2562866">Journal</a>]
-                [<a href="ColbesCLRB17.bib">BibTex</a>]
-            </div>
-        </li>
+    <section>
+        <p class="section-label">Selected Publications</p>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <span class="pub-title">Synthetic dataset generation with itemset-based generative models</span>
+                <div class="pub-meta">Lezcano, C. and Arias, M. &nbsp;&middot;&nbsp; IEEE ISSRE Workshop (RSDA) &nbsp;&middot;&nbsp; 2019</div>
+                <div class="pub-links">
+                    <a href="https://ieeexplore.ieee.org/document/8990348" target="_blank">IEEE Xplore</a>
+                    <a href="RSDA19slides.pdf">Slides</a>
+                    <a href="LezcanoRSDA2019.bib">BibTeX</a>
+                </div>
+            </li>
+            <li class="pub-item">
+                <span class="pub-title">Characterizing transactional databases for frequent itemset mining</span>
+                <div class="pub-meta">Lezcano, C. and Arias, M. &nbsp;&middot;&nbsp; SIAM SDM Workshop &nbsp;&middot;&nbsp; 2019</div>
+                <div class="pub-links">
+                    <a href="http://ceur-ws.org/Vol-2436/article_5.pdf" target="_blank">PDF</a>
+                    <a href="LezcanoA19.bib">BibTeX</a>
+                </div>
+            </li>
+            <li class="pub-item">
+                <span class="pub-title">Protein side-chain packing problem: is there still room for improvement?</span>
+                <div class="pub-meta">Colbes, J., et al. &nbsp;&middot;&nbsp; Briefings in Bioinformatics &nbsp;&middot;&nbsp; 2017</div>
+                <div class="pub-links">
+                    <a href="https://academic.oup.com/bib/article/18/6/1033/2562866" target="_blank">Journal</a>
+                    <a href="ColbesCLRB17.bib">BibTeX</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-        <li>
-            <span class="paper-title">An experimental analysis of the performance of sidechain packing algorithms</span>
-            <div class="paper-meta">Brizuela, C., Corona, R., Lezcano, C., et al. (2015) • GECCO Companion</div>
-            <div class="paper-links">
-                [<a href="https://dl.acm.org/citation.cfm?doid=2739482.2768440">ACM DL</a>]
-                [<a href="BrizuelaCLRC15.bib">BibTex</a>]
-            </div>
-        </li>
-
-        <li>
-            <span class="paper-title">Team algorithms based on ant colony optimization</span>
-            <div class="paper-meta">Lezcano, C., Pinto, D. and Baran, B. (2008) • PPSN X</div>
-            <div class="paper-links">
-                [<a href="https://link.springer.com/chapter/10.1007%2F978-3-540-87700-4_77">Springer</a>]
-                [<a href="LezcanoPB08.bib">BibTex</a>]
-            </div>
-        </li>
-    </ul>
+    <footer>
+        Christian Lezcano &nbsp;&middot;&nbsp; San Lorenzo, Paraguay &nbsp;&middot;&nbsp; 2026
+    </footer>
 
 </body>
 </html>
