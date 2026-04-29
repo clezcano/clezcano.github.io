@@ -67,8 +67,7 @@
             height: 90px;
             border-radius: 50%;
             object-fit: cover;
-            /* Ensures centering capability */
-            display: inline-block; 
+            display: block; /* Necessary for centering via margin auto */
         }
 
         /* ── NAVIGATION ── */
@@ -140,18 +139,20 @@
             color: var(--text-tertiary);
         }
 
-        /* ── MOBILE ── */
+        /* ── MOBILE RESPONSIVENESS ── */
         @media (max-width: 600px) {
             header { 
-                flex-direction: column-reverse; 
+                flex-direction: column-reverse; /* Put photo on top */
                 text-align: center; 
-                gap: 20px; 
+                gap: 24px;
+                align-items: center; /* Center everything in the flex container */
             }
             .avatar { 
-                display: block; 
-                margin: 0 auto; 
+                margin: 0 auto; /* Bulletproof centering */
             }
-            .nav-links { justify-content: center; }
+            .nav-links { 
+                justify-content: center; 
+            }
         }
     </style>
 </head>
@@ -175,10 +176,10 @@
 
     <section>
         <p>
-            I am based in San Lorenzo. My current interests include Agentic AI, RAG Systems, and Discrete Optimization. 
+            I am based in San Lorenzo, Paraguay. My current interests include Agentic AI, RAG Systems, and Discrete Optimization. 
         </p>
         <p>
-            This semester, I am teaching <em>Algorithms II</em> and <em>ICT</em> (Information and Communication Technologies) 
+            I teach <em>Algorithms II</em> and <em>ICT</em> (Information and Communication Technologies) 
             at the Columbia University of Paraguay.
         </p>
     </section>
