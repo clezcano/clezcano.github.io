@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lezcano</title>
 
-    <meta name="description" content="Christian Lezcano — Researcher and Instructor based in San Lorenzo, Paraguay.">
+    <meta name="description" content="Christian Lezcano — Instructor and Researcher based in San Lorenzo, Paraguay.">
     <meta name="author" content="Christian Lezcano">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +67,8 @@
             height: 90px;
             border-radius: 50%;
             object-fit: cover;
-            filter: grayscale(20%);
+            /* Ensures centering capability */
+            display: inline-block; 
         }
 
         /* ── NAVIGATION ── */
@@ -89,7 +90,7 @@
         /* ── SECTIONS ── */
         section { margin-bottom: 48px; }
 
-        p { margin-bottom: 16px; }
+        p { margin-bottom: 12px; }
 
         .section-title {
             font-family: var(--font-sans);
@@ -141,7 +142,15 @@
 
         /* ── MOBILE ── */
         @media (max-width: 600px) {
-            header { flex-direction: column-reverse; text-align: center; gap: 20px; }
+            header { 
+                flex-direction: column-reverse; 
+                text-align: center; 
+                gap: 20px; 
+            }
+            .avatar { 
+                display: block; 
+                margin: 0 auto; 
+            }
             .nav-links { justify-content: center; }
         }
     </style>
@@ -166,12 +175,11 @@
 
     <section>
         <p>
-            I am a researcher and instructor based in San Lorenzo. My current work is focused on 
-            <strong>Agentic AI</strong>, <strong>RAG Systems</strong>, and <strong>Discrete Optimization</strong>. 
+            I am based in San Lorenzo. My current interests include Agentic AI, RAG Systems, and Discrete Optimization. 
         </p>
         <p>
             This semester, I am teaching <em>Algorithms II</em> and <em>ICT</em> (Information and Communication Technologies) 
-            at the Columbia University of Paraguay, where I also supervise undergraduate theses.
+            at the Columbia University of Paraguay.
         </p>
     </section>
 
